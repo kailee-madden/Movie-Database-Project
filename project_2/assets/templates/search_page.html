@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">  
+   <link rel="stylesheet" href="/css/style.css">
+   <title> Movies </title>
+</head>
+<body>
+ <div class="container">
+   <div class="header">
+     <h1> Magical Movie Generator </h1>
+   </div>
+   <div class="main">
+   <h3> Are you interested in finding out more about your favorite movie? Type a movie title into our generatoror pick a genre from the dropdown list and let the magic begin! </h3>
+     <form action = "/title">
+     Movie Title: <br>
+     <input type = "text" name = "moviename"></br>
+     <br>
+     <button type="submit">Search</button> 
+     </form>
+     <form action = "/genre">
+     Genre: <br>
+       <select name = "genre">
+	     {% for genre in genres%}
+         <option value="{{genre}}">{{genre}}</option>
+		 {% end %}
+       </select>
+   	   </br>
+       </br>
+     <button type="submit">Search</button>
+ 	</form>      
+   </div>
+ </div>
+</body>
+</html>

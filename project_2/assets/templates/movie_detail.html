@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">  
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Movie Details</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+	  <h1> {{movie['title']}} </h1>
+	</div>
+	<div class="details">
+	  <p align="right"> <img src="{{imdb_data['Poster']}}"> </p>
+	  <p> {{imdb_data['Plot']}} </p>
+	  <p> {{imdb_data['Genre']}}</p> 
+	  <p> Awards: {{imdb_data['Awards']}} </p>
+    </div>
+    <div class="main">
+	  <p> The rating is {{round(rating['rating'], 2)}}, rated by {{ rating['count']}} people</p>
+    <form action="/rating">
+    <input type="radio" name="rating" value="1"> 1 <br>
+    <input type="radio" name="rating" value="2"> 2 <br>
+    <input type="radio" name="rating" value="3"> 3 <br>
+    <input type="radio" name="rating" value="4"> 4 <br>
+    <input type="radio" name="rating" value="5"> 5 <br><br>
+    <input type="submit" value="Submit">
+	<input type="hidden" name="movie_id" value={{movie['movie_id']}}>
+    </form>
+    </div>
+  </div>
+</body>
+</html>

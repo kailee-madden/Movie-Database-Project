@@ -1,0 +1,114 @@
+body {
+   font-family: Courier New, Courier, Lucinda Sans Typewriter, Lucinda Typewrite;
+   color: white;
+   text-align: center;
+}
+
+.container {
+   position: fixed;
+   top: 20px;
+   left: 20px;
+   bottom: 20px;
+   right: 120px;
+   padding: 20px 50px;
+   background-image: url("https://cdn.shutterstock.com/shutterstock/videos/13765838/thumb/1.jpg?i10c=img.resize(height:160)") ;
+   background-size: cover;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav {
+   position: fixed;
+   top: 5px;
+   width: 110px;
+   right: 25px;
+}
+
+nav ul {
+   list-style-type: none;
+}
+
+nav ul a {
+   text-decoration: none;
+   color: #ffffff;
+}
+
+nav ul a.visited {
+   color: #928f9e;
+}
+
+
+div.header {
+   position: absolute;
+   top: 10px;
+   height: 80px;
+   left: 25px;
+   right: 25px;
+}
+
+div.header h1 {
+}
+
+div.poster {
+   width: 15%;
+   float: left;
+}
+
+div.poster img {
+   display: block;
+   max-width: 95%;
+   max-height: 95%;
+   margin: auto;
+}
+
+div.detail {
+   width: 82%;
+   float: right;
+}
+
+div.rating {
+   position: relative;
+   top: 20px;
+}
+
+div.main {
+   position: absolute;
+   top: 100px;
+   bottom: 10px;
+   left: 25px;
+   right: 25px;
+}
+
+div.header {
+}
+
+div.index {
+   position: absolute;
+   top: 5px;
+   bottom: 5px;
+   left: 5px;
+   right: 5px;
+   overflow-y: scroll;
+   overflow-x: hidden;
+}
+
+div.index table td {
+   vertical-align: top;
+}
+
+div.index table a {
+   text-decoration: none;
+   color: white;
+}
+
+div.index table a.visited {
+   color: #505050;
+}
+
+div.index table th {
+   text-align: left;
+   min-width: 80px;
+}
+
+body {
+   background-color: #530572;
+}

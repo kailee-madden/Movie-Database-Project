@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">  
+   <link rel="stylesheet" href="/css/style.css">
+   <title>Movie Index Page</title>
+</head>
+<body>
+ <div class="container">
+   <div class="header">
+     <h1>Results</h1>
+   </div>
+   <div class="main">
+     <table>
+       {% for rec in rows %}
+         <tr>
+           <td> {{rec['year']}}</td>
+           <td> {{rec['title']}}</td>
+           <td> <a href="/detail/{{ rec['movie_id'] }}">More Details</a></td>
+         </tr>
+       {% end %}
+     </table>
+   </div>
+   
+ </div>
+</body>
+</html>
